@@ -7,7 +7,7 @@ poshare是一个获取公开投资组合的工具，po时`portfolio`的缩写，
 ```python
 from poshare import Xueqiu
 
-Xueqiu.set_config({
+Xueqiu.config({
     'cookie': 'your xueqiu cookie'
 })
 
@@ -35,3 +35,17 @@ xq.show_origin()
 
 
 ## 果仁
+
+```python
+from poshare import Gouren
+
+Gouren.config({
+    'cookie': 'your guoren cookie'
+})
+
+gr = Gouren(symbol='2032861.R.247270131703851')
+
+# 策略详情
+gr.strategy()
+
+```

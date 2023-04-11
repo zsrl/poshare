@@ -10,8 +10,8 @@ class Xueqiu:
     ua = UserAgent()
 
     @staticmethod
-    def set_config(config):
-        Xueqiu.cookie = config.get('cookie')
+    def config(conf):
+        Xueqiu.cookie = conf.get('cookie')
 
     def __init__(self, symbol=None):
         self.symbol =symbol
